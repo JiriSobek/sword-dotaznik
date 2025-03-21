@@ -203,6 +203,7 @@ export default function SwordDotaznik() {
               {q.items.map((item, idx) => (
                 <div key={idx} className="mb-4">
                   <p className="mb-2">{item}</p>
+                  <p className="mb-2 font-bold">{item}</p>
                   <div className="flex flex-col gap-2">
                     {options.map((opt, oIdx) => (
                       <label key={oIdx} className="flex items-center gap-2">
