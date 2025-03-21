@@ -200,7 +200,7 @@ export default function SwordDotaznik() {
         <form>
           {questions.map((q, i) => (
             <div key={i} className="mb-8">
-              <h2 className="text-xl font-semibold mb-4">{q.category}</h2>
+              <h2 className="text-2xl font-semibold mb-4">{q.category}</h2>
               {q.items.map((item, idx) => (
                 <div key={idx} className="mb-4">
                 <p className="mb-2 font-bold text-gray-500">{item}</p>
