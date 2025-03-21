@@ -170,7 +170,7 @@ export default function SwordDotaznik() {
 </ResponsiveContainer>
 
 
-        <div className="mt-20 p-4 border rounded bg-gray-50">
+        <div className="mt-20 p-4 border rounded bg-gray-50 text-center">
           <h3 className="text-lg font-semibold mb-2">Celkové průměrné skóre</h3>
           <p className="text-xl font-bold">{averageScore.toFixed(1)} / 3</p>
         </div>
@@ -252,7 +252,7 @@ export default function SwordDotaznik() {
 </ResponsiveContainer>
 
 
-          <div className="mt-20 p-4 border rounded bg-gray-50">
+          <div className="mt-20 p-4 border rounded bg-gray-50 text-center">
             <h3 className="text-lg font-semibold mb-2">Celkové skóre</h3>
             <p className="text-xl font-bold">{calculateTotalScore().toFixed(1)} / 3</p>
           </div>
