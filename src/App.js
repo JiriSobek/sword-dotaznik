@@ -194,7 +194,7 @@ export default function SwordDotaznik() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-10 text-center mt-12">SWORD DOTAZNÍK - Reflexe pracovního prostředí</h1>
+      <h1 className="text-3xl font-bold mb-10 text-center mt-8">SWORD DOTAZNÍK - Reflexe pracovního prostředí</h1>
 
       {!submitted ? (
         <form>
