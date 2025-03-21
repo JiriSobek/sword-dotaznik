@@ -158,7 +158,7 @@ export default function SwordDotaznik() {
         <ResponsiveContainer width="100%" height={350}>
           <BarChart data={averageResults}>
             <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
-            <YAxis domain={[1, 4]} />
+            <YAxis domain={[1, 3]} />
             <Tooltip />
             <Legend />
             <Bar dataKey="score">
@@ -249,7 +249,7 @@ export default function SwordDotaznik() {
 
           <div className="mt-6 p-4 border rounded bg-gray-50">
             <h3 className="text-lg font-semibold mb-2">Celkové skóre</h3>
-            <p className="text-xl font-bold">{calculateTotalScore().toFixed(1)} / 4</p>
+            <p className="text-xl font-bold">{calculateTotalScore().toFixed(1)} / 3</p>
           </div>
 
                 </div>
