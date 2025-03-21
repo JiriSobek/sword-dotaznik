@@ -239,7 +239,7 @@ export default function SwordDotaznik() {
     <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
     <YAxis 
       domain={[1, 3]} 
-      tickCount={3} 
+      ticks={[0, 1, 2, 3]}  
       allowDecimals={false} 
     />
     <Tooltip />
