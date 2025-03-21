@@ -239,7 +239,6 @@ export default function SwordDotaznik() {
               <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
               <YAxis domain={[1, 3]} />
               <Tooltip />
-              <Legend />
               <Bar dataKey="score">
                 {chartData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.fill} />
