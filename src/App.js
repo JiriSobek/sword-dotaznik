@@ -155,19 +155,20 @@ export default function SwordDotaznik() {
       <div className="max-w-4xl mx-auto p-6">
         <h1 className="text-2xl font-bold mb-6 text-center">Souhrnné výsledky všech účastníků</h1>
 
-        <ResponsiveContainer width="100%" height={350}>
-          <BarChart data={averageResults}>
-            <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
-            <YAxis domain={[1, 3]} />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="score">
-              {averageResults.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={entry.fill} />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
+       <ResponsiveContainer width="100%" height={350}>
+  <BarChart data={averageResults}>
+    <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
+    <YAxis domain={[1, 3]} />  {/* Možná by mělo být [0, 3], pokud je min. 0! */}
+    <Tooltip />
+    {/* <Legend /> */}  // smazáno nebo zakomentováno
+    <Bar dataKey="score">
+      {averageResults.map((entry, index) => (
+        <Cell key={`cell-${index}`} fill={entry.fill} />
+      ))}
+    </Bar>
+  </BarChart>
+</ResponsiveContainer>
+
 
         <div className="mt-6 p-4 border rounded bg-gray-50">
           <h3 className="text-lg font-semibold mb-2">Celkové průměrné skóre</h3>
