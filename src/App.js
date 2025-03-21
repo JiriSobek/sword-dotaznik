@@ -157,7 +157,7 @@ export default function SwordDotaznik() {
 
        <ResponsiveContainer width="100%" height={500}>
   <BarChart data={averageResults}>
-    <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={0} textAnchor="end" />
+    <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={0} textAnchor="middle" />
     <YAxis domain={[1, 3]} />  {/* Možná by mělo být [0, 3], pokud je min. 0! */}
     <Tooltip />
     {/* <Legend /> */}  // smazáno nebo zakomentováno
@@ -236,7 +236,7 @@ export default function SwordDotaznik() {
           <h2 className="text-xl font-bold mb-4">Výsledky hodnocení</h2>
          <ResponsiveContainer width="100%" height={500}>
   <BarChart data={chartData}>
-    <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={0} textAnchor="end" />
+    <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={0} textAnchor="middle" />
     <YAxis 
       domain={[1, 3]} 
       ticks={[0, 1, 2, 3]}  
