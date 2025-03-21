@@ -155,7 +155,7 @@ export default function SwordDotaznik() {
       <div className="max-w-4xl mx-auto p-6">
         <h1 className="text-2xl font-bold mb-6 text-center">Souhrnné výsledky všech účastníků</h1>
 
-       <ResponsiveContainer width="100%" height={350}>
+       <ResponsiveContainer width="100%" height={400}>
   <BarChart data={averageResults}>
     <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
     <YAxis domain={[1, 3]} />  {/* Možná by mělo být [0, 3], pokud je min. 0! */}
