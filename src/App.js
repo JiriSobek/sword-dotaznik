@@ -23,7 +23,7 @@ const questions = [
     items: [
       "Moje práce má pro mě smysl a odpovídá mým hodnotám.",
       "Vidím, že moje práce pozitivně ovlivňuje kvalitu života klientů.",
-      "Mám možnost rozhodovat o tom, jak bude péče o klienta vypadat."
+      "Mám možnost podílet se na rozhodování o tom, jak bude péče o klienta vypadat."
     ]
   },
   {
@@ -39,7 +39,7 @@ const questions = [
     items: [
       "Mám pravidelné supervize, kde můžu sdílet obtížné situace.",
       "Cítím, že supervize nejsou jen formální, ale opravdu mi pomáhají zvládat zátěž.",
-      "Mám možnost se podílet na rozhodování o rozvoji služeb a změnách v organizaci."
+      "Mám možnost podílet se na rozhodování o rozvoji služeb a změnách v organizaci."
     ]
   },
   {
