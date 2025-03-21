@@ -236,7 +236,7 @@ export default function SwordDotaznik() {
           <ResponsiveContainer width="100%" height={350}>
             <BarChart data={chartData}>
               <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
-              <YAxis domain={[1, 4]} />
+              <YAxis domain={[1, 3]} />
               <Tooltip />
               <Legend />
               <Bar dataKey="score">
