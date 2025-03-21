@@ -234,18 +234,23 @@ export default function SwordDotaznik() {
       ) : (
         <div>
           <h2 className="text-xl font-bold mb-4">Výsledky hodnocení</h2>
-          <ResponsiveContainer width="100%" height={350}>
-            <BarChart data={chartData}>
-              <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
-              <YAxis domain={[1, 3]} />
-              <Tooltip />
-              <Bar dataKey="score">
-                {chartData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.fill} />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
+         <ResponsiveContainer width="100%" height={350}>
+  <BarChart data={chartData}>
+    <XAxis dataKey="category" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" />
+    <YAxis 
+      domain={[1, 3]} 
+      tickCount={3} 
+      allowDecimals={false} 
+    />
+    <Tooltip />
+    <Bar dataKey="score">
+      {chartData.map((entry, index) => (
+        <Cell key={`cell-${index}`} fill={entry.fill} />
+      ))}
+    </Bar>
+  </BarChart>
+</ResponsiveContainer>
+
 
           <div className="mt-15 p-4 border rounded bg-gray-50">
             <h3 className="text-lg font-semibold mb-2">Celkové skóre</h3>
