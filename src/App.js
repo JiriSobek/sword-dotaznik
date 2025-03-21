@@ -53,10 +53,10 @@ const questions = [
 ];
 
 const options = [
-  { label: "Úplně souhlasím", value: 4 },
-  { label: "Spíše souhlasím", value: 3 },
-  { label: "Spíše nesouhlasím", value: 2 },
-  { label: "Vůbec nesouhlasím", value: 1 }
+  { label: "Úplně souhlasím", value: 3 },
+  { label: "Spíše souhlasím", value: 2 },
+  { label: "Spíše nesouhlasím", value: 1 },
+  { label: "Vůbec nesouhlasím", value: 0 }
 ];
 
 export default function SwordDotaznik() {
@@ -252,14 +252,7 @@ export default function SwordDotaznik() {
             <p className="text-xl font-bold">{calculateTotalScore().toFixed(1)} / 4</p>
           </div>
 
-          <button
-            type="button"
-            onClick={() => setViewResults(true)}
-            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mt-6"
-          >
-            Zobrazit souhrnné výsledky
-          </button>
-        </div>
+                </div>
       )}
     </div>
   );
